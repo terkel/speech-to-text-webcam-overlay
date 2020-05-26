@@ -322,17 +322,23 @@
                     textAreaHeightSet(document.getElementById('result_log'));
                     vr_function();
                     flag_speech = 0;
+                    console.log(1);
                 } else {
                     document.getElementById('result_text').innerHTML = results[i][0].transcript;
                     flag_speech = 1;
+                    console.log(2);
                 }
+                console.log(3);
             }
+            FONTPLUS.reload();
+            console.log(4);
         }
 
         flag_speech = 0;
         document.getElementById('status').innerHTML = "待機中";
         document.getElementById('status').className = "ready";
         recognition.start();
+        console.log(5);
     }
 
     // 認識結果のログのtextareaを自動変形する
