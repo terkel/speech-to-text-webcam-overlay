@@ -121,7 +121,8 @@ a:link, a:visited, a:hover, a:active {
 	bottom: -0.5rem;
 	left: 0;
 	padding: 0.5rem;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'TsukuGoPro-B', sans-serif;
+	font-kerning: none;
 	font-size: 68px;
 	font-weight: 500;
 	letter-spacing: 0.05em;
@@ -369,7 +370,7 @@ select {
 .result_log_area {
 	width: 960px;
 	background-color: #000;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'TsukuGoPro-B', sans-serif;
 	font-size: 100%;
 	color: #AAA;
 }

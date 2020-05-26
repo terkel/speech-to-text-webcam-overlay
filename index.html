@@ -14,8 +14,8 @@
     <meta property="og:image"       content="https://terkel.github.io/speech-to-text-webcam-overlay/thumbnail.jpg">
     <meta name="twitter:card"       content="summary">
     
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?ver=202005241950" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?u4~ccAreoo4%3D&box=6-dhUkA-1Lc%3D" charset="utf-8"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
@@ -643,15 +643,14 @@
 
     // フォント切替
     // 参考: https://www.google.com/intl/ja/chrome/demos/speech.html
-    var fonts_custom =
-        [['Noto Sans JP',     "'Noto Sans JP', sans-serif"],
-        ['BIZ UD ゴシック（Winodws 10）', "'BIZ UDゴシック', 'BIZ UDGothic', 'Noto Sans JP', sans-serif"],
-        ['BIZ UD 明朝（Winodws 10）', "'BIZ UD明朝', 'BIZ UDMincho', 'Noto Sans JP', sans-serif"],
-        ['游ゴシック', "游ゴシック体, 'Yu Gothic', YuGothic, sans-serif"],
-        ['メイリオ', "'メイリオ', 'Meiryo', 'Noto Sans JP', sans-serif"],
-        ['ポップ体（Windows）', "'HGS創英角ﾎﾟｯﾌﾟ体', 'Noto Sans JP', sans-serif"],
+    var fonts_custom = [
+        ['筑紫ゴシック',     "'TsukuGoPro-B', sans-serif"],
+        ['筑紫アンティークL明朝', "'TsukuAntiqueLMinStd-L', serif"],
+        ['ニューシネマB', "'NewCinemaBStd-D', sans-serif"],
+        ['ラグランパンチ', "'RaglanPunchStd-UB', sans-serif"],
         ['ゴシック体（ブラウザ標準）', "sans-serif"],
-        ['明朝体（ブラウザ標準）',    "serif"]];
+        ['明朝体（ブラウザ標準）',    "serif"]
+    ];
 
     for (var i = 0; i < fonts_custom.length; i++) {
         select_font.options[i] = new Option(fonts_custom[i][0], i);
